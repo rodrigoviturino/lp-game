@@ -1,0 +1,140 @@
+// Cores
+$title-main: #3c3954;
+$text-title: #757575;
+$color-default: #1E266D;
+$color-secondary: #23D3D3;
+$color-text: #818198;
+$color-title: #3a3a47;
+$color-title-secondary: #445555;
+$color-subTitle: #607d9c;
+
+
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,800,900&display=swap');
+$font-1: "Open Sans", sans-serif;
+$font-2: "Montserrat", sans-serif;
+// $font-2: 'Open Sans', sans-serif;
+
+// Função de CONVERTER PX to EM
+@function em($pixel, $contexto: 16) {
+    @return $pixel / $contexto + em;
+}
+
+// Mixins TIPOGRAFIA
+@mixin type-1($size){
+
+    font-family: $font-1;
+    @if $size == 10 {
+        font-size:em(10);
+    }
+    @else if $size == 11 {
+        font-size:em(11);
+    }
+    @else if $size == 12 {
+        font-size:em(12);
+    }
+    @else if $size == 13 {
+        font-size:em(13);
+    }
+    @else if $size == 14 {
+        font-size: em(14);
+    }
+    @else if $size == 15 {
+        font-size: em(15);
+    }
+    @else if $size == 16 {
+        font-size: em(16);
+    }
+    @else if $size == 17 {
+        font-size: em(17);
+    }
+    @else if $size == 18 {
+        font-size: em(18);
+    }
+    @else if $size == 24 {
+        font-size: em(24);
+    } 
+    @else if $size == 20 {
+        font-size: em(20);
+    }
+    @else if $size == 25 {
+        font-size: em(25);
+    }
+    @else if $size == 30 {
+        font-size: em(30);
+    }
+    @else if $size == 35 {
+        font-size: em(35);
+    }
+    @else if $size == 40 {
+        font-size: em(40);
+        line-height: 45px;
+    }
+    @else if $size == 45 {
+        font-size: em(45);
+    }
+    @else if $size == 50 {
+        font-size: em(50);
+    }
+    @else if $size == 56 {
+        font-size: em(56);
+    }
+    @else if $size == 60 {
+        font-size: em(60);
+        line-height: 80px;
+    }
+}
+
+@mixin type-2($size) {
+    font-family: $font-2;
+    @if $size == 12 {
+        font-size: em(12);
+    }
+    @else if $size == 14 {
+        font-size: em(14);
+    }
+    @else if $size == 13 {
+        font-size: em(13);
+    }
+    @else if $size == 16 {
+        font-size: em(16);
+    }
+    @else if $size == 18 {
+        font-size: em(18);
+    }
+    @else if $size == 20 {
+        font-size: em(20);
+    }
+    @else if $size == 24 {
+        font-size: em(24);
+    }
+    @else if $size == 30 {
+        font-size: em(30);
+    }
+    @else if $size == 34 {
+        font-size: em(34);
+    }
+}
+
+/* ORDER FLEX */
+.order1 {
+	order: 1;
+}
+
+.order2 {
+	order: 2;
+}
+
+.order3 {
+	order: 3;
+}
+
+.order4 {
+	order: 4;
+}
+
+.order-1 {
+	order: -1;
+}

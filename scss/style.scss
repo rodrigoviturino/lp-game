@@ -1,0 +1,16 @@
+// Gerais
+@import 'reset';
+@import 'grid';
+// @import 'normalize/_import-now';
+@import 'variaveis_e_mixins';
+@import 'geral';
+
+// Partls
+@import 'fonts/_fonts';
+@import 'header';
+@import 'page/home';
+
+// div {
+// font-family: 'PT Mono', monospace;
+// font-family: 'Aref Ruqaa', serif;
+// }
