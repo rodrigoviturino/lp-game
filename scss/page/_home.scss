@@ -63,7 +63,7 @@
 /* Characters */
 .characters {
     background-color: #0F131E;
-    padding: 120px 0;
+    padding: 120px 0 80px 0;
 
     h2 {
         color: #f8f9fa;
@@ -113,3 +113,134 @@
     /* End Persona */
 }
 /* End Characters */
+
+/* Form Contato */
+.contato {
+    background-color: #0F131E;
+    padding: 60px 0;
+    text-align: center;
+
+    .block-title {
+        margin-top: 20px;
+        padding: 22px 15px;
+
+        h2 {
+            color: #f8f9fa;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 40px;
+            @include type-2(34);
+            &::after {
+                content: '';
+                display: block;
+                background-color: #ffc107;
+                width: 80px;
+                height: 2px;
+                margin: 30px auto 0 auto;
+            }
+        }
+
+        p {
+            color: #f8f9fa;
+            line-height: 28px;
+            font-weight: 300;
+            @include type-1(15);
+        }
+    }
+
+    .msg-enviada {
+        display: none;
+        color: rgba(89, 243, 89, 0.712);
+    }
+
+    .msg-ativa {
+        display: block !important;
+    }
+
+    form {
+        text-align: center;
+        max-width: 500px;
+        margin: 0 auto;
+
+        input {
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+            padding: 18px 30px;
+            color: #f8f9fa;
+            width: 100%;
+            background-color: transparent;
+            border: solid 1px #3a4048;  
+            @include type-1(12);          
+        }
+
+        textarea {
+            background-color: transparent;
+            border: solid 1px #3a4048;
+            padding: 20px;
+            color: #f8f9fa;
+            width: 100%;
+            margin-top: 20px;
+            display: block;
+            border-radius: 5px;
+            @include type-1(12);
+        }
+
+        .btnForm {
+            display: block;
+            background-color: #ffc107;
+            border: none;
+            padding: 7px 25px;
+            margin-top: 25px;
+            color: #151515;
+            font-weight: 400;
+            transition: all 1.5s;
+            @include type-1(16);
+
+            &:hover {
+                background-color: transparent;
+                border: solid 1px #ffc107;
+                color: #f8f9fa;
+                transition: all 0.7s;
+            }
+        }
+    }
+}
+/* End Form Contato */
+
+/* Footer */
+.footer {
+    background-color: #151515;
+    padding: 30px;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+        .t {
+            display: flex;
+
+            a {
+                font-weight: 600;
+                color: #f8f9fa;
+                padding: 0 15px;
+                text-transform: uppercase;
+                @include type-1(13);
+            }
+
+        }
+
+        .tt {
+            i {
+                margin: 0 10px;
+            }
+            
+            display: flex;
+            li {
+                i {
+                    color: #f8f9fa;
+                }
+            }
+        }
+    }
+}
